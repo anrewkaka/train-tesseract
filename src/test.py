@@ -10,7 +10,7 @@ except ImportError:
 
 lang = sys.argv[1]
 
-img_path = '/app/data/validation/0.tif'
+img_path = '/content/train-tesseract/data/validation/0.tif'
 img = Image.open(img_path)
 raw_text = pytesseract.image_to_string(img, lang=lang)
 target = "The computers are becoming sentient,"
